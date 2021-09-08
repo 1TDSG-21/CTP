@@ -1,6 +1,6 @@
 # Preparar um relatório que retorne os alunos que passaram direto sem a necessidade da nota do global solution
 
-def relatorio_alunos_passaram_sgs(media_primeiro_semestre, cp_01, cp_02, cp_03, nota_challenge):
+def relatorio_alunos_passaram_sgs(media_primeiro_semestre, cp_01, cp_02, cp_03, nota_challenge_sprint3, nota_challenge_sprint4):
     '''
         Essa função deverá retornar um dicionário com os alunos que passaram sem a nota do Global Solution
         Formato do dicionario -> 
@@ -12,7 +12,8 @@ def relatorio_alunos_passaram_sgs(media_primeiro_semestre, cp_01, cp_02, cp_03, 
         param2: nota do Checkpoint 1
         param3: nota do Checkpoint 2
         param4: nota do Checkpoint 3
-        param5: nota do challenge
+        param5: nota do challenge sprint 3
+        param6: nota do challenge sprint 4
 
         Regra: A menor nota dos checkpoints é descartada
     '''
@@ -23,9 +24,10 @@ def relatorio_alunos_passaram_sgs(media_primeiro_semestre, cp_01, cp_02, cp_03, 
     cp_notas.remove(menor_nota_cp)
 
     media_cp = sum(cp_notas) / 2
+    media_challenge = (nota_challenge_sprint3 + nota_challenge_sprint4) / 2
 
 
-    media_final = media_primeiro_semestre * peso_primeiro_semestre + (((nota_challenge + media_cp) / 2) * 0.4) * peso_segundo_semestre
+    media_final = media_primeiro_semestre * peso_primeiro_semestre + (((media_challenge + media_cp) / 2) * 0.4) * peso_segundo_semestre
 
     # Teste
     return media_final
@@ -33,7 +35,7 @@ def relatorio_alunos_passaram_sgs(media_primeiro_semestre, cp_01, cp_02, cp_03, 
 
 # Teste
 def teste():
-    alunos = relatorio_alunos_passaram_sgs(10, 5, 10, 8, 8)
+    alunos = relatorio_alunos_passaram_sgs(10, 5, 10, 8, 8, 7)
     print(alunos)
 
 
