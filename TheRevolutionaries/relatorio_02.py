@@ -3,7 +3,7 @@
 def relatorio_alunos_nao_passaram(media_primeiro_semestre, cp_01, cp_02, cp_03, nota_challenge_sprint3, nota_challenge_sprint4, nota_global_solution):
     
     '''
-        Essa função deverá retornar um dicionário com os alunos que não possuem chance de aprovação (não passaram mesmo que tirem 10 no Global Solution)
+        Essa função deverá retornar um dicionário com os alunos que não possuem chance de aprovação (não passarão mesmo que tirem 10 no Global Solution)
         Formato do dicionario -> 
         alunos_nao_aprovados = {
             "RM": "nome"
