@@ -2,7 +2,7 @@
 
 Repositório dedicado a atividade de Python
 
-- [ ] Como a média anual é calculada na FIAP ➡️ <b>GoCodeFiap(</b>Ricardo Kenji)
+- [X] Como a média anual é calculada na FIAP ➡️ <b>GoCodeFiap(</b>Ricardo Kenji)
 - [X] Como buscar as informações na planilha ➡️ <b>JoinTech</b>(Matheus Sanches)
 - [ ] Como mostrar os relatórios na tela ➡️ <b>Unknown</b>(Leonardo Mendes)
 - [ ] Relatório 1 ➡️ <b>Tage</b>(Izadora Amorim)
