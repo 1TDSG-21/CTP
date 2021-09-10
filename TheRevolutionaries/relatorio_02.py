@@ -6,7 +6,7 @@ def relatorio_alunos_nao_passaram(alunos_data):
         Formato do dicionario -> 
         alunos_não_aprovados = {
             "RM": "nome"
-            String: String
+            String: String 
         }
         param1: Lista com os dados de todos os alunos
         Regra: A menor nota dos checkpoints é descartada
