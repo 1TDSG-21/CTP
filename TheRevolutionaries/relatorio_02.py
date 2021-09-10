@@ -14,7 +14,7 @@ def relatorio_alunos_nao_passaram(alunos_data):
     alunos_nao_aprovados_com_gs = dict()
 
     for i in alunos_data:
-        cp_notas = [float(i["semestre_02"]["checkpoint_01"]), float(i["semestre_02"]["checkpoint_02"]), float(i["semestre_02"]["checkpoint_01"])]
+        cp_notas = [float(i["semestre_02"]["checkpoint_01"]), float(i["semestre_02"]["checkpoint_02"]), float(i["semestre_02"]["checkpoint_03"])]
         peso_primeiro_semestre = 0.4
         peso_segundo_semestre = 0.6
         media_gs = 10
