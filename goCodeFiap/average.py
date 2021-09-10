@@ -9,6 +9,8 @@
 # os dados estao na planinha modelo que esta em pdf
 # a validacao das notas maiores ja foi criado entao nao precisa se preocupar
 # a tabela acima e ficticia,voce precisa criar os alunos com os dados correspondente
+
+
 def handleCalculation(secondSemester):
     sumCheckpoint = 0
     if(float(secondSemester[2]) > float(secondSemester[4]) and float(secondSemester[2]) > float(secondSemester[6])  ):
