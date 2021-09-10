@@ -26,7 +26,7 @@ def relatorio_alunos_passaram_sgs(alunos_data):
         media_final = i["semestre_01"] * peso_primeiro_semestre + (((media_challenge + media_cp) / 2) * 0.4) * peso_segundo_semestre
 
         # Condição para salvar o aluno na lista
-        if media_final >= 7.0:
+        if media_final >= 6.0:
             alunos_aprovados_sem_gs[i["rm"]] = i["nome"]
 
 
