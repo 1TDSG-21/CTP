@@ -13,4 +13,6 @@ Repositório dedicado a atividade de Python
 
 🎌 Prazo final: 13/09 - 12h00 🎌
 
+Grupo Analista: <b>Key Team</b>(Gabriel Amara)
+
 
