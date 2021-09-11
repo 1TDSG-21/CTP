@@ -7,22 +7,39 @@ lista = getDatas()
 nota_gs_min=nota_min_gs(lista) 
 aprovado_sem_gs=relatorio_alunos_passaram_sgs(lista)
 reprovado_com_gs=relatorio_alunos_nao_passaram(lista)
-print(len(nota_gs_min))
-print(len(lista))
-print(len(aprovado_sem_gs))
-print(aprovado_sem_gs)
+# print(len(nota_gs_min))
+# print(len(lista))
+# print(len(aprovado_sem_gs))
+# print(len(reprovado_com_gs))
 def mostra_info_alunos(lista):
-	for i in range(len(lista)):
-		print(lista[i]['rm'],'  ',lista[i]['nome'])
-		print("Disciplina:  Computational Thinking using Python")
-		print("Semestre 1: ",lista[i]['semestre_01'])
-		print("Semestre 2")
-		print("Checkpoints (média): ",nota_gs_min[0][lista[i]['nome']]['ck_media'])
-		print("Challenge: ",nota_gs_min[0][lista[i]['nome']]['challenge_media'])
-		print("Nota mínima na Global Solution para aprovação: ",nota_gs_min[0][lista[i]['nome']]['gs_minimo'])
-# print(lista[0]['rm'])
-# print(nota_gs_min[0]['Alfonso Matsuoka Schiavelli'])
+    for i in range(len(lista)):
+      print(60*'-')
+      print('\t',lista[i]['rm'],'  ',lista[i]['nome'],'\n')
+      print("Disciplina:  Computational Thinking using Python")
+      print("Semestre 1: {}".format(lista[i]['semestre_01']))
+      print("\t\t\tSemestre 2\n")
+      print("Checkpoints (média): {:.2f}".format(nota_gs_min[lista[i]['nome']]['ck_media']))
+      print("Challenge: {:.2f}".format(nota_gs_min[lista[i]['nome']]['challenge_media']))
+      print("Nota mínima na Global Solution para aprovação: {:.2f}".format(nota_gs_min[lista[i]['nome']]['gs_minimo']))
+      print(60*'-','\n')
+    
 # print(mostra_info_alunos(lista))
-#print(lista)
-# alunos_aprovados_sem_gs = relatorio_alunos_passaram_sgs(lista)
-# print(alunos_aprovados_sem_gs)
+
+def mostra_alunos_reprovados(lista):
+  if len(reprovado_com_gs)>0:
+    print('Alunos que não possuem chance de aprovação na disciplina:')
+    for rm, nome in aprovado_sem_gs.items():
+      print('RM: {} - {}'.format(rm,nome))
+  else:
+    print('Não há alunos reprovados')    
+
+def mostra_alunos_aprovados(lista):
+  if len(aprovado_sem_gs)>0:
+    print('Alunos já aprovados na disciplina:')
+    for rm, nome in aprovado_sem_gs.items():
+      print('RM: {} - {}'.format(rm,nome))
+  else:
+    print('Não há alunos aprovados')
+    
+print(reprovado_com_gs)   
+    

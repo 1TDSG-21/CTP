@@ -50,8 +50,8 @@ def handleAverage(user):
     return  averageYear
 
 # repare que a funcao precisa de um parametro
-handleAverage(parametro) 
-# todo comentairo e com intencao de auxiliar no uso da funcao
+# handleAverage(parametro) 
+# # todo comentairo e com intencao de auxiliar no uso da funcao
 # ela vai retornar o calculo anual. Usamos a formula modelo 
 # Ma= (0.4*primerio semestre) + (0.6*segundo semestre)
 # A funcao precisa da lista acima, 
