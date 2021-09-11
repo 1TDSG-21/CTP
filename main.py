@@ -31,7 +31,7 @@ def mostra_info_alunos(lista):
 def mostra_alunos_reprovados():
   if len(reprovado_com_gs)>0:
     print('Alunos que não possuem chance de aprovação na disciplina:\n')
-    for rm, nome in aprovado_sem_gs.items():
+    for rm, nome in reprovado_com_gs.items():
       print('RM: {} - {}'.format(rm,nome))
   else:
     print('Não há alunos reprovados')    

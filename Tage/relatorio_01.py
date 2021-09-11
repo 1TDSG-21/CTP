@@ -15,7 +15,7 @@ def nota_min_gs(lista):
         sobra = 6 - media_final
 
         if sobra > 0:
-            gs_min = (sobra /0.6) / 6
+            gs_min = (sobra /0.6) / 0.6
 
         if media_final < 6:
             aluno[i["nome"]] = dict(rm=i["rm"],sem1=i["semestre_01"] , ck_media=media_cp, challenge_media=media_challenge, gs_minimo=round(gs_min, 2))

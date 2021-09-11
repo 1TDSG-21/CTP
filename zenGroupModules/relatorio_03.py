@@ -16,7 +16,7 @@ def relatorio_alunos_passaram_sgs(alunos_data):
     alunos_aprovados_sem_gs = dict()
 
     for i in alunos_data:
-        cp_notas = [float(i["semestre_02"]["checkpoint_01"]), float(i["semestre_02"]["checkpoint_02"]), float(i["semestre_02"]["checkpoint_01"])]
+        cp_notas = [float(i["semestre_02"]["checkpoint_01"]), float(i["semestre_02"]["checkpoint_02"]), float(i["semestre_02"]["checkpoint_03"])]
         peso_primeiro_semestre = 0.4
         peso_segundo_semestre = 0.6
         menor_nota_cp = min(cp_notas) # Pegando a menor nota
